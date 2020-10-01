@@ -1,0 +1,337 @@
+@charset "utf-8";
+body{
+	max-width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+
+}
+/* Slider */
+.slider-back{
+	max-width: 100%;
+	margin-top: -22px;
+	float: left;
+	background: #E5080B;
+	padding:10px; 
+	background-image: linear-gradient(150deg, #014a93 30%, #FFFFFF 30.08%);
+}
+
+.slider-back .profile{
+	width: 60%;
+	padding: 3px;
+	float: left;
+	margin: 20px 10px 0px 7%;
+	box-shadow: 2px 2px 3px #A3A1A1;
+
+}
+
+div#slider-gallery { 
+  width: 100%; overflow: hidden; 
+}
+
+figure { 
+  margin: 0;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0;
+	animation: 20s slid infinite; 
+}
+
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img {
+	max-width:100%;
+	height: auto;
+	border: #FFFFFF 5px solid;
+}
+
+@keyframes slid {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+/*-------------------- slider caption --------------------------*/
+
+.profile-2{
+	width: 30%;
+	float: left;
+}
+
+div#camption { 
+  width: 100%; overflow: hidden; 
+}
+
+.profile-2 figure.slider2 { 
+  position: relative; width: 500%;
+  font-size: 0;
+	animation: 20s slid2 infinite; 
+}
+
+.profile-2 figure.slider2 figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+.profile-2 figure.slider2 img {
+	max-width:100%;
+	height: auto;
+}
+
+.profile-2 figure.slider2 figure figcaption { 
+	width: 100%;
+	padding: 60px 10px 0px 10px;
+  	position: relative;
+  	color: #5A5858;
+	line-height: 1.6;
+  	font-size:40px;
+	font-family:myFirstFont;
+}
+
+@keyframes slid2 {
+0% { left: 0%; }
+23% { left: 0%; }
+28% { left: -100%; }
+48% { left: -100%; }
+53% { left: -200%; }
+73% { left: -200%; }
+78% { left: -300%; }
+99% { left: -300%; }
+100% { left: -400%; }
+}
+
+.slogan{
+	width: 100%;
+	font-family:mySecondFont;
+	font-size: 20px;
+	padding: 10px 0 20px 10px;
+	color:#F90000;
+	float: left;
+}
+
+/*-----------------Gallery---------------------*/
+.gallery{
+	width: 90%;
+	float: left;
+	margin:70px 5% 30px 5%;
+	background: #828282;
+}
+
+.printing-service{
+	width: 100%;
+	float: left;
+	background: url( ../images/profile/Printing-Press.jpg) no-repeat center;
+	background-size: 100% 100%;}
+
+.service{
+	width:100%;
+	float: left;
+	font-size: 30px;
+	font-family:mySecondFont;
+	font-weight: bold;
+	color: #FF6F19;
+	text-align: center;
+	direction: rtl;
+	padding-top: 30px;
+}
+
+.serivice-info{
+	max-width:100%;
+	float: left;
+	font-size: 20px;
+	font-family:mySecondFont;
+	color: #FFFFFF;
+	text-align: center;
+	direction: rtl;
+	padding: 5px 20% 10px 20%;
+}
+
+.profile-gallery{
+    width: 96%;
+	background: #D37C00;
+	float: left;
+	padding: 40px 2%;
+}	
+
+.sample {
+	width: 31.333333%;
+	float: left;
+    position: relative;
+    overflow: hidden;
+	margin: 1%;
+	-webkit-box-shadow: 0 8px 10px -6px #000000;
+	-moz-box-shadow: 0 8px 10px -6px #000000;
+	box-shadow: 0 8px 10px -6px #000000;
+}
+
+.sample img {
+	border: #916300 2px solid;
+}
+
+.overly {
+    height: 100%;
+    width: 100%;
+	left: -100%;
+    top: 0;
+	padding-top: 30%;
+	font-weight: bold;
+	position: absolute;
+	font-size: 24px;
+	font-family:aril;
+	text-align: center;
+	color: #FF0000;
+	background-image: linear-gradient(150deg, rgba(255,255,255,0.78) 65%, #BF7C00  65.08%);
+	transition: 0.3s;
+}
+.sample:hover .overly {
+    left: 0%;
+}
+
+
+/*--------------------------------- Book Design -------------------------*/
+.book-back{
+	width: 75%;
+	float: left;
+	padding: 30px 20% 20px 5%;
+	background: #600101;
+	background-image: url( ../images/profile/Book-back-2.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.book-head{
+	width:100%;
+	float: left;
+	font-size: 40px;
+	font-family:mySecondFont;
+	font-weight: bold;
+	color: #FF6F19;
+	text-align: center;
+	direction: rtl;
+}
+
+.book-info{
+	max-width:100%;
+	float: left;
+	font-size: 20px;
+	font-family:mySecondFont;
+	color: #FFFFFF;
+	text-align: center;
+	direction: rtl;
+	padding: 5px 20% 10px 20%;
+}
+
+.book-gallery{
+	width: 90%;
+	padding: 5%;
+	float: left;
+	background: #272020;
+}
+
+.book {
+	width: 31.333333%;
+	float: left;
+	margin: 1%;
+	box-shadow: 0 8px 10px -6px #000000;
+}
+
+
+.book img{
+	border: #666161 thick solid;
+	transition: transform 0.3s ease-in-out;
+}
+
+.book:hover img{
+	transform: scale(1.1);
+}
+
+
+
+@media screen and (max-width: 767px) {
+	
+.slider-back{margin-top: -50px;
+	padding:3px; 
+	background-image: linear-gradient(130deg, #014a93 20%, #FFFFFF 20.08%);	}
+.slider-back .profile{	margin: 20px 10px 0px 1%;}
+	
+.profile-2 figure.slider2 figure figcaption { 
+	padding: 25px 1px 0px 1px;
+	line-height:1.3;
+	font-weight: bold;
+  	font-size:4.5vw; }
+.slogan{font-size: 3.3vw; font-weight: bold; padding-left: 0px}	
+
+/*---------------- Slider ----------------------*/
+	
+.gallery{ margin-top: 35px;}
+.service{font-size: 40px;}
+.serivice-info{	padding: 5px 5% 10px 5%;}
+.sample-background{ width: 94%; margin: 20px 3%  20px 3%;}
+.sample { width: 48.297%;}
+	
+/* ------------- Profile gallery--------------------*/
+.service{ font-size: 6.5vw; padding-top: 20px;}
+.serivice-info{	font-size: 3vw;	padding: 5px 5% 10px 5%;}
+.sample {width: 48%;}	
+.overly { padding-top: 22%; font-size: 20px;}	
+
+/* --------------- Book Gallery ---------------------------*/
+.book-back{
+	width: 100%; padding:0px; background-image: url(../images/profile/Book-back.png);}
+
+.book-head{
+	width:80%; padding: 20px 20% 0px 0px; font-size: 4.7vw;
+	
+}
+
+.book-info{
+	width: 80%;
+	font-size: 4vw;
+	padding: 20px 20% 10px 5px;
+}
+
+.book-gallery{
+	width: 90%;
+	padding: 5%;
+	float: left;
+	background: #272020;
+}
+
+.book {
+	width: 31.333333%;
+	float: left;
+	margin: 1%;
+	box-shadow: 0 8px 10px -6px #000000;
+}
+	
+	
+	
+	
+}
+
+
+/*---------------- only Slider ----------------------------*/
+
+@media (min-width:767px) and (max-width:950px){
+.profile-2 figure.slider2 figure figcaption { 
+	padding: 40px 1px 0px 1px;
+	line-height:1.6;
+	font-weight: bold;
+  	font-size:4vw; }
+.slogan{font-size: 3.5vw; font-weight: bold; padding-left: 0px}	}
+
+/*----------------------------------------------------------*/
+

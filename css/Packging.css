@@ -1,0 +1,256 @@
+@charset "utf-8";
+body{
+	max-width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+.packaging-back{
+	width: 100%;
+	float: left;
+	background: #44003d;
+	margin-top: -23px;
+	padding-bottom:15%;
+	background-image: url( ../images/Packging/pattern.png);
+	background-repeat: repeat;
+	border-bottom: #FF7E00 10px solid;
+}
+
+.heading{
+	width:100%;
+	float: left;
+	font-size: 40px;
+	font-family:mySecondFont;
+	font-weight: bold;
+	color: #FF6F19;
+	text-align: center;
+	direction: rtl;
+	padding-top: 30px;
+	animation: 2s anim-lineUp ease-out infinite;
+	animation-iteration-count: 2;
+}
+
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-80%);
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-0%);
+  }
+}
+
+
+.heading-2{
+	width:100%;
+	float: left;
+	font-size: 20px;
+	font-family:mySecondFont;
+	color: #FFFFFF;
+	text-align: center;
+	direction: rtl;
+	padding-bottom: 80px;
+}
+
+.packaging-sample{
+	max-width:70%;
+	padding: 20px 15% 10px 15%;
+	float: left;
+	margin-top: -220px
+}
+
+.packaging-sample img{
+	border: 8px solid transparent;
+	border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  	border-image-slice: 1;
+}
+
+/*--------------------  Text slider --------------------------*/
+.packaging-gallery{
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	float: left;
+	background: #2B0060;
+}	
+
+.text-slider{
+	max-width: 100%;
+	float: left;
+	background: url( ../images/Packging/back-2.jpg) no-repeat center;
+	background-size: 100% 100%;
+	padding: 0px 50px;
+}
+
+div#text-gallery { 
+  width: 100%; overflow: hidden; 
+}
+
+figure { 
+  margin: 0;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+
+figure.slider2 { 
+  position: relative; width: 500%;
+  font-size: 0;
+	animation: 10s slidy2 infinite; 
+}
+
+figure.slider2 figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider2 img {
+	max-width:100%;
+	height: auto;
+}
+
+figure.slider2 figure figcaption { 
+	width: 80%;
+  	position: relative;
+	left: 30px;
+	right: -30px;
+  	font-size: 30px;
+	font-family:mySecondFont;
+	color: orange;
+	padding: 100px 0px;
+	text-align: center;
+}
+
+
+@keyframes slidy2 {
+0% { left: 0%; }
+23% { left: 0%; }
+28% { left: -100%; }
+48% { left: -100%; }
+53% { left: -200%; }
+73% { left: -200%; }
+78% { left: -300%; }
+99% { left: -300%; }
+100% { left: -400%; }
+}
+
+/*--------------------------------- packging Design -------------------------*/
+.packging-back{
+	width: 75%;
+	float: left;
+	padding: 30px 20% 20px 5%;
+	background: #600101;
+	background-image: url( ../images/profile/packging-back-2.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+.packging-head{
+	max-width:100%;
+	float: left;
+	font-size: 40px;
+	font-family:mySecondFont;
+	font-weight: bold;
+	color: #FF6F19;
+	text-align: center;
+	direction: rtl;
+}
+
+.packging-info{
+	max-width:100%;
+	float: left;
+	font-size: 20px;
+	font-family:mySecondFont;
+	color: #FFFFFF;
+	text-align: center;
+	direction: rtl;
+	padding: 5px 20% 10px 20%;
+}
+
+.box-gallery{
+	width: 90%;
+	padding: 5%;
+	float: left;
+	background: #005CA8;
+	background-image: url( ../images/Packging/pattern.png);
+	background-repeat: repeat;
+	border-bottom: #FF7E00 10px solid;
+}
+
+.packging {
+	width: 46%;
+	float: left;
+	margin: 2%;
+	box-shadow: 0 8px 10px -6px #000000;
+}
+
+
+.packging img{
+	border: #666161 thick solid;
+	transition: transform 0.3s ease-in-out;
+}
+
+.packging:hover img{
+	transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 767px) {
+	
+	
+/*--------------------------- Top-------------------*/
+.packaging-back{ margin-top: -30px;	}
+.heading{ font-size: 30px;	padding-top: 10px;}
+
+.heading-2{	font-size: 20px; padding-bottom: 60px;}
+.packaging-sample{ width:90%; margin-top: -130px}
+
+/*------------------------------ Text gallery --------------------*/ 	
+.packaging-gallery{
+	width: 96%;
+	margin-left: 2%;
+	margin-top: 50px;
+}	
+
+figure.slider2 figure figcaption {
+	padding: 0px;
+	}
+	
+	
+/* --------------- box Gallery ---------------------------*/
+.packging-back{
+	width: 100%; padding:0px; background-image: url(../images/profile/packging-back.png);}
+
+.packging-head{	width:90%; padding: 10px 5% 0px 0px; font-size:3vw;}
+
+	
+.packging-info{
+	width: 90%;
+	font-size: 4vw;
+	padding: 10px 5% 10px 5px;
+}
+
+.box-gallery{
+	width: 90%;
+	padding: 5%;
+	float: left;
+}
+
+.packging {
+	width:46%;
+	margin: 2%;
+}
+}
+
+
