@@ -1,132 +1,25 @@
-@charset "utf-8";
-/* CSS Document */
-
-.heading1{
-	width: 100%;
-	text-align: center;
-	color: #C70606;
-	font-size: 30px;
-	clear: both;
-    font-family:myFirstFont;
-	padding: 15px 0px;
-	margin-top: 40px;
-	border-top: #FF0000 thin dotted; 
-	float: left;
-	background: #E8E8E8; 
+.text1{
+  max-width: 100%;
+  background: blue;
+  padding: 3px;
+  color:yellow;
+  font-size: 40px;
 }
-
-.heading2{
-	max-width: 100%;
-	font-size: 30px;
-	color: #DD7501;
-	text-align: center;
-	clear: both;
-	font-family:mySecondFont;
-	padding: 40px 0px 230px 0px;
-}
-.heading2:hover{
-	color: aqua;
-}
-
-/*---------------- info-------------------*/
-
-.info-back{
-	max-width:100%;
-	padding:30px 15%;
-	background: #FFFFFF;
-	float: left;
-	margin: 30px 0px;
-	background-image: linear-gradient(to left, transparent, transparent 50%, #82E6F7 50%, #2BE1FF);
-	background-position: 100% 0;
-  	background-size: 200% 100%;
-}
-
-.info-back:hover {
-  	background-position: 0 0;
-  	color: #333;
-	transition: all 0.25s ease-in;
-
-}
-.information{
-	width:50%;
-	direction: rtl;
-	float: left;
-	font-family:mySecondFont;
-	font-size: 18px;
-	padding: 20px;
-	text-align: justify;
-	border-right: #F80004 thin dotted;
-}
-
-.machine{
-	width: 30%;
-	float: left;
-	padding: 0 10px;
-}
-
-/*-----------------Gallery---------------------*/
-.working{
-	width:100%;
-	background: url( ../images/index/pattern.jpg);
-	float: left;
-	}
-
-.moore{
-	width:60%;
-	float: left;
-	font-size:24px;
-	color: #0C7D0B;
-	font-family:myFirstFont;
-	text-align: right;
-	padding-right: 20px;
-}
-
-.moore a{
-	text-decoration: none;
-}
-
-
-.arrow{
-	width:20%;
-	float: left;
-	animation: fadeIn 1s infinite alternate;
-	font-family:myFirstFont;
-}
-
-@keyframes fadeIn { 
-  from { opacity: 0; } 
-}
-
 
 @media (min-width:320px) and (max-width:480px){
-	
-.heading2{
-	font-size: 6vw;
-	padding: 20px 3% 150px 3%;
-}
 
-.slogan{font-size:5vw;}
-
-.info-back{	padding:5px 15%;}
-.information{ width:95%; font-size: 11px; padding: 10px 5px}
-.machine{ display: none;}
-	
-.moore{	width:70%;}
-.arrow{	width:10%;}	
+  .text1{
+    color:red ;
+  }  
 }
 
 
-@media (min-width:481px) and (max-width:767px){
-	
-.heading2{
-	font-size:6vw;
-	padding: 20px 10px 150px 10px;
-}
-	
-.information{ width:90%; font-size: 13px; padding: 0px 10%;}
-.machine{ display: none;}	
-	
-		
-}
+  @media (min-width:481px) and (max-width:767px){
+    .text1{
+      color:rgb(157, 3, 247) ;
+      background: rgb(78, 150, 31);
 
+    }  
 
+  }
+  
